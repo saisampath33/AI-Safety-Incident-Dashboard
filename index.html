@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Safety Incident Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Safety Incident Dashboard</h1>
+      <button id="toggleDarkMode" class="toggle-dark-mode">🌙 Dark Mode</button>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchBar" placeholder="Search incidents...">
+
+      <div class="filter-buttons">
+        <button class="filter-btn" data-severity="All">All</button>
+        <button class="filter-btn" data-severity="Low">Low</button>
+        <button class="filter-btn" data-severity="Medium">Medium</button>
+        <button class="filter-btn" data-severity="High">High</button>
+      </div>
+
+      <select id="sortDate">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+
+    </div>
+
+    <div class="stats">
+      <p><strong>Total Incidents: </strong><span id="totalCount">0</span></p>
+    </div>
+
+    <div id="incidentList" class="incident-list"></div>
+
+    <hr>
+
+    <h2>Report New Incident</h2>
+    <form id="incidentForm" class="incident-form">
+      <input type="text" id="title" placeholder="Title" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <select id="severity" required>
+        <option value="">Select Severity</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Submit Incident</button>
+    </form>
+
+    <footer class="footer">
+      <p>Designed by - <strong>Korada Sai Sampath Kumar</strong></p>
+      <p>
+        <a href="https://github.com/saisampath33/AI-Safety-Incident-Dashboard" target="_blank">GitHub Repo</a> | 
+        <a href="https://www.linkedin.com/in/sai-sampath2004/" target="_blank">LinkedIn</a>
+      </p>
+    </footer>
+  </div>
+
+  <script type="module" src="./dist/app.js"></script>
+</body>
+</html>

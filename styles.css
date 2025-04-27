@@ -1,0 +1,233 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f2f5;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.toggle-dark-mode {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #343a40;
+  color: white;
+  cursor: pointer;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+input#searchBar {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #0056b3;
+}
+
+select#sortDate {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.expand-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.expand-controls button {
+  padding: 8px 12px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.expand-controls button:hover {
+  background: #5a6268;
+}
+
+.stats {
+  margin: 10px 0;
+}
+
+.incident-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.incident {
+  background: #f9f9f9;
+  border-left: 6px solid #007bff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.3s;
+}
+
+.incident:hover {
+  background: #eef1f4;
+}
+
+.incident-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.badge.Low {
+  background: #28a745;
+  color: white;
+}
+
+.badge.Medium {
+  background: #ffc107;
+  color: black;
+}
+
+.badge.High {
+  background: #dc3545;
+  color: white;
+}
+
+.incident-meta {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.details {
+  margin-top: 10px;
+  font-size: 15px;
+  display: none;
+}
+
+button.view-details {
+  margin-top: 8px;
+  background: #17a2b8;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.view-details:hover {
+  background: #117a8b;
+}
+
+.incident-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.incident-form input,
+.incident-form textarea,
+.incident-form select,
+.incident-form button {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.incident-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.incident-form button:hover {
+  background-color: #218838;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .container {
+  background: #1f1f1f;
+}
+
+body.dark .incident {
+  background: #2a2a2a;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}

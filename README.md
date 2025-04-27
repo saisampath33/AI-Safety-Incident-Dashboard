@@ -24,7 +24,7 @@ A simple and interactive dashboard built with **HTML**, **CSS**, and **TypeScrip
 
 ## 🚀 Live Demo
 
-👉 [**Visit the Live Demo**](https://aisafetyincidentdashboard.netlify.app/)
+👉 [**Visit the Live Demo**](https://aisafetyincidentdashboard.vercel.app/)
 
 ---
 
